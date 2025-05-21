@@ -28,9 +28,6 @@ Este aplicativo **não salva dados localmente** em banco de dados nem em arquivo
 
 - Desinstale o app.
 - Limpe os dados nas configurações do app (Configurações > Apps > CalcularIMC > Limpar dados).
-- Utilize comandos ADB para desinstalar o app ou limpar dados:
-  - `adb uninstall com.app.calcularimc`
-  - `adb shell pm clear com.app.calcularimc`
 
 ## Tecnologias Utilizadas
 
