@@ -1,40 +1,36 @@
-readme_content = """# App CalcularIMC
+readme_content = """
+# CalcularIMC
 
-Aplicativo Android para cálculo do Índice de Massa Corporal (IMC) com interface simples e amigável. O app calcula o IMC baseado nos dados de peso e altura fornecidos pelo usuário, exibindo o resultado, um status de saúde com imagem ilustrativa, além de um conselho personalizado.
+## Descrição
 
----
+O **CalcularIMC** é um aplicativo Android desenvolvido em 2023 para o projeto da disciplina **Tecnologias para Dispositivos Mobile**. O app permite que o usuário calcule o Índice de Massa Corporal (IMC) a partir do peso e altura informados, exibindo uma avaliação do estado de saúde e um conselho baseado no resultado.
 
 ## Funcionalidades
 
-- **Entrada de dados:** O usuário insere seu peso (em kg) e altura (em metros) por meio de campos de texto.
-- **Validação:** O app valida os dados para garantir que os campos não estejam vazios e que os valores sejam positivos e numéricos.
-- **Cálculo do IMC:** O IMC é calculado usando a fórmula:  
-  `IMC = peso / (altura * altura)`
-- **Exibição do resultado:** Mostra o valor do IMC com duas casas decimais.
-- **Status de saúde:** Exibe um texto descritivo e uma imagem correspondente ao estado:  
-  - Abaixo do peso (IMC < 18.5)  
-  - Peso normal (IMC >= 18.5 e < 25)  
-  - Acima do peso (IMC >= 25)
-- **Conselhos personalizados:** Mensagens específicas baseadas na faixa de IMC do usuário.
-- **Confirmação de logout:** Diálogo para confirmar se o usuário realmente deseja sair do app.
+- Cálculo do IMC com base no peso (kg) e altura (m) fornecidos pelo usuário.
+- Exibição do resultado do IMC com duas casas decimais.
+- Indicação visual do estado de saúde (abaixo do peso, peso normal ou acima do peso) através de imagens ilustrativas.
+- Exibição de uma mensagem personalizada com recomendações de saúde baseadas no IMC.
+- Confirmação de entrada dos dados com validação básica para evitar valores inválidos ou campos vazios.
+- Diálogo de confirmação para logout.
 
----
+## Armazenamento de Dados
 
-## Armazenamento dos dados
+Este aplicativo **não salva dados localmente** em banco de dados nem em arquivos. Contudo, o Android mantém o estado do aplicativo no dispositivo ou emulador enquanto ele não é desinstalado ou os dados do app não são limpos manualmente, o que pode dar a impressão de que os dados "ficam salvos" entre execuções.
 
-Este aplicativo **não armazena dados localmente nem remotamente**. Todos os cálculos são realizados em tempo real a partir dos dados inseridos no momento pelo usuário. Após o fechamento do app, os dados são descartados.  
+### Para limpar os dados no emulador ou dispositivo:
 
-Se desejar, pode-se estender o app para salvar históricos usando banco de dados local (ex: SQLite) ou armazenamento em nuvem.
+- Desinstale o app.
+- Limpe os dados nas configurações do app (Configurações > Apps > CalcularIMC > Limpar dados).
+- Utilize comandos ADB para desinstalar o app ou limpar dados:
+  - `adb uninstall com.app.calcularimc`
+  - `adb shell pm clear com.app.calcularimc`
 
----
+## Tecnologias Utilizadas
 
-## Requisitos do sistema
-
-- Android Studio 4.0 ou superior
-- SDK Android 21 (Lollipop) ou superior
-- Dispositivo ou emulador com Android
-
----
+- Linguagem: Java
+- Plataforma: Android (Android Studio)
+- Componentes: `EditText`, `Button`, `ImageView`, `TextView`, `Toast`, `AlertDialog`
 
 ## Como executar
 
