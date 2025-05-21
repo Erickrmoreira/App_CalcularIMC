@@ -1,5 +1,5 @@
 
-# CalcularIMC
+# App CalcularIMC
 
 ## Descrição
 
