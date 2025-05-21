@@ -73,8 +73,6 @@ public class CadastroActivity extends AppCompatActivity {
             return;
         }
 
-        // Removida a validação de tamanho mínimo da senha
-
         if (!senha.equals(confirmarSenha)) {
             Toast.makeText(this, "As senhas não coincidem", Toast.LENGTH_SHORT).show();
             return;
