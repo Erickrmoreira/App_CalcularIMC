@@ -14,7 +14,7 @@ Este aplicativo foi criado em 2023 para o projeto da disciplina **Tecnologias pa
 
 ## Telas
 
-O aplicativo possui 3 telas principais:
+O aplicativo possui somente 3 telas:
 
 1. **Tela de Login:** Para o usuário entrar no app.
 2. **Tela de Cadastro:** Para criação de nova conta.
