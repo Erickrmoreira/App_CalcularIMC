@@ -3,16 +3,22 @@
 
 ## Descrição
 
-O **CalcularIMC** é um aplicativo Android desenvolvido em 2023 para o projeto da disciplina **Tecnologias para Dispositivos Mobile**. O app permite que o usuário calcule o Índice de Massa Corporal (IMC) a partir do peso e altura informados, exibindo uma avaliação do estado de saúde e um conselho baseado no resultado.
+Este aplicativo foi criado em 2023 para o projeto da disciplina **Tecnologias para Dispositivos Mobile**. É um app bem simples, sem complexidade, que permite ao usuário calcular o Índice de Massa Corporal (IMC) e receber um status e conselho de saúde baseado no resultado.
 
 ## Funcionalidades
 
-- Cálculo do IMC com base no peso (kg) e altura (m) fornecidos pelo usuário.
-- Exibição do resultado do IMC com duas casas decimais.
-- Indicação visual do estado de saúde (abaixo do peso, peso normal ou acima do peso) através de imagens ilustrativas.
-- Exibição de uma mensagem personalizada com recomendações de saúde baseadas no IMC.
-- Confirmação de entrada dos dados com validação básica para evitar valores inválidos ou campos vazios.
-- Diálogo de confirmação para logout.
+- **Cálculo do IMC:** O usuário insere peso e altura para calcular seu IMC.
+- **Status de saúde:** Exibe uma imagem e texto que indicam se o usuário está abaixo do peso, com peso normal ou acima do peso.
+- **Conselhos personalizados:** Mensagens de orientação baseadas no resultado do IMC.
+- **Confirmação de logout:** Caixa de diálogo para o usuário confirmar se deseja realmente sair do app.
+
+## Telas
+
+O aplicativo possui 3 telas principais:
+
+1. **Tela de Login:** Para o usuário entrar no app.
+2. **Tela de Cadastro:** Para criação de nova conta.
+3. **Tela Principal (Main):** Onde o cálculo do IMC é feito e os resultados são exibidos.
 
 ## Armazenamento de Dados
 
