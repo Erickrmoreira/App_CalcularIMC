@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#55A8E3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/usuarioEditText"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="Nome"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="14sp"
+        android:backgroundTint="#D4E9F8"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="14sp"
+        android:backgroundTint="#D4E9F8"/>
+
+    <EditText
+        android:id="@+id/senhaEditText"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="15sp"
+        android:backgroundTint="#D4E9F8"/>
+
+    <EditText
+        android:id="@+id/confirmarSenhaEditText"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/senhaEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="15sp"
+        android:backgroundTint="#D4E9F8"/>
+
+    <Button
+        android:id="@+id/cadastrarUsuarioButton"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="Confirmar"
+        app:layout_constraintTop_toBottomOf="@+id/confirmarSenhaEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#55A8E3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
