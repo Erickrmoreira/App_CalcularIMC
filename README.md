@@ -22,7 +22,8 @@ O aplicativo possui somente 3 telas:
 
 ## Armazenamento de Dados
 
-Este aplicativo **não salva dados localmente** em banco de dados nem em arquivos. Contudo, o Android mantém o estado do aplicativo no dispositivo ou emulador enquanto ele não é desinstalado ou os dados do app não são limpos manualmente, o que pode dar a impressão de que os dados "ficam salvos" entre execuções.
+Este aplicativo utiliza **SharedPreferences** para salvar os dados de login localmente em um arquivo XML no dispositivo ou emulador. Esses dados persistem entre execuções do aplicativo até que o app seja desinstalado ou os dados sejam limpos manualmente nas configurações do Android. O aplicativo não utiliza bancos de dados ou outros tipos de arquivos para armazenamento.
+
 
 ### Para limpar os dados no emulador ou dispositivo:
 
