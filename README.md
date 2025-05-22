@@ -3,7 +3,7 @@
 
 ## Descrição
 
-Este aplicativo foi criado em 2023 para o projeto da disciplina **Tecnologias para Dispositivos Mobile**. É um app bem simples, sem complexidade, que permite ao usuário calcular o Índice de Massa Corporal (IMC) e receber um status e conselho de saúde baseado no resultado.
+Este aplicativo foi criado em 2023 para o projeto da disciplina **Tecnologias de Dispositivos Mobile**. É um app bem simples, sem complexidade, que permite ao usuário calcular o Índice de Massa Corporal (IMC) e receber um status e conselho de saúde baseado no resultado.
 
 ## Funcionalidades
 
